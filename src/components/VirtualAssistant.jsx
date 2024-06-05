@@ -56,7 +56,7 @@ const VirtualAssistant = () => {
           setUserEmail(input);
           setMessages((prevMessages) => [
             ...prevMessages,
-            { text: `Gracias, ${userName}. Hemos registrado tu correo como ${input}.`, fromUser: false },
+            { text: `Gracias, ${userName}. Hemos registrado tu correo como ${userEmail}.`, fromUser: false },
             { text: "¿Son correctos estos datos?", fromUser: false },
           ]);
           setStep(2);
